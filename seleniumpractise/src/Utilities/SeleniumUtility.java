@@ -14,7 +14,7 @@ public class SeleniumUtility {
 		WebDriver driver = null;
 		if(browserName.equalsIgnoreCase("Chrome")) {
 			//use setup method of WebDriverManager
-			WebDriverManager.chromedriver().setup();
+			WebDriver.chromedriver().setup();
 			//Step2 :create an instance of chrome browser
 			driver = new ChromeDriver();
 		}else if (browserName.equalsIgnoreCase("firefox")) {
